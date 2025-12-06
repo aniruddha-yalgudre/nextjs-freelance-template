@@ -5,7 +5,8 @@ export const SITE_CONFIG = {
   title: "Aniruddha Yalgudre | Frontend Developer: Portfolio & Projects",
   description:
     "Aniruddha Yalgudre is a freelance developer specializing in high-quality frontend, full-stack, and UI/UX solutions for businesses and startups. Explore portfolio, projects, skills, and contact information.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://aniruddha-design.vercel.app",
+  url:
+    process.env.NEXT_PUBLIC_SITE_URL || "https://aniruddha-design.vercel.app",
   ogImage:
     "https://o2a0p1u8mrgj3pm2.public.blob.vercel-storage.com/Artboard%204%20copy%40500x.png",
   keywords: [
