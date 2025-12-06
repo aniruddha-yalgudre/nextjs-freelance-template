@@ -1,0 +1,8 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "🔍 Running Biome + Prettier checks..."
+
+pnpm biome lint --write .
+pnpm biome format --write .
+pnpm prettier --write .
