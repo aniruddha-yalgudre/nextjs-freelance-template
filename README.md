@@ -50,14 +50,17 @@ nextjs-template/
 |   │   ├─ Navbar.tsx
 |   │   ├─ Container.tsx
 |   │   ├─ Hero.tsx
-|   │   └─ ...                     # More reusable components
-|   ├─ provider/                   # Application-wide providers
-|   │   └─ theme-provider.tsx      # Wrapper for next-themes                          
+|   │   └─ ...                        # More reusable components
+|   |
+|   ├─ provider/                       # Application-wide providers
+|   │   └─ theme-provider.tsx          # Wrapper for next-themes
+|   │   └─ container-provider.tsx      # Provides default container width context
+|   |
 |   ├─ config/                 # SEO metadata and app config
 |   ├─ constant/               # Project-wide constants
 |   ├─ hooks/                  # Custom and reusable React hooks
-|   ├─ lib/                    # Helper utilities (e.g. cn.ts, etc.) 
-|   ├─ primitives/             # Low-level UI primitives (e.g. Button)
+|   ├─ lib/                    # Helper utilities (e.g. cn.ts, etc.)
+|   ├─ primitives/             # Low-level UI primitives (e.g. Button and shad-cn components)
 |   ├─ types/                  # TypeScript types and interfaces
 |   ├─ styles/                 # Styles
 |      └─ globals.css         # Tailwind base & global styles
@@ -71,8 +74,6 @@ nextjs-template/
 ├─ LICENSE                     # MIT License
 └─ README.md                   # Project documentation
 ```
-
-
 
 ## Getting Started
 
@@ -88,7 +89,7 @@ To get started with the Next Essential project, follow these steps:
 - Keep reusable components in the `components/` folder
 - Place primitive components like buttons, inputs, etc., in the `primitives/` folder
 - Store hooks in the `hooks/` folder to make them easily reusable
-- Define all interfaces in the `interfaces/` folder
+- Define all interfaces in the `types/` folder
 - Store helpers, utilities, and configurations in the `lib/` folder
 - Use context and global state management with the `providers/` folder
 - Follow the TypeScript and Biome.js linting rules
@@ -96,7 +97,7 @@ To get started with the Next Essential project, follow these steps:
 
 ## Customization
 
-- Modify the theme in `styles/root-layout.css`
+- Modify the theme in `styles/globals.css`
 - Configure Next.js settings in `next.config.ts`
 
 For major changes, please open an issue first to discuss what you would like to change.
