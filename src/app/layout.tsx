@@ -22,7 +22,7 @@ export default function RootLayout({
         // fonts.soraFont.variable,
         fonts.geistSans.variable,
         fonts.geistMono.variable,
-        "font-geistSans",
+        "font-Sans",
       )}
     >
       <body>
