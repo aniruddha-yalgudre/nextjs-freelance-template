@@ -1,4 +1,5 @@
 import { ThemeProvider } from "@/provider/theme-provider"
+import { AnimationProvider } from "@/provider/animation-provider"
 
 import "@/styles/globals.css"
 
@@ -22,12 +23,14 @@ export default function RootLayout({
         // fonts.soraFont.variable,
         fonts.geistSans.variable,
         fonts.geistMono.variable,
-        "font-geistSans",
+        "font-Sans",
       )}
     >
       <body>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <main className="min-h-screen">{children}</main>
+          <AnimationProvider smoothScroll={false}>
+            <main className="min-h-screen">{children}</main>
+          </AnimationProvider>
         </ThemeProvider>
       </body>
     </html>

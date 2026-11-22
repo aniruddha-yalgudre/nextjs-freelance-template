@@ -5,7 +5,7 @@ import Image from "next/image"
 export default function Home() {
   return (
     <main className="relative flex h-screen flex-col items-center justify-center dark:bg-neutral-950">
-      <Container >
+      <Container>
         <div className="flex flex-col items-center gap-6">
           <Image
             src="https://o2a0p1u8mrgj3pm2.public.blob.vercel-storage.com/Artboard%204%20copy%40500x.png"

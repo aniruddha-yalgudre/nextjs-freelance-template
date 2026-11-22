@@ -1,6 +1,7 @@
 # Node
 node_modules/
 .pnpm-store/
+*.tsbuildinfo
 
 # Next.js
 .next/
@@ -21,4 +22,4 @@ pnpm-debug.log*
 .env.production.local
 
 # Biome cache
-.biome/
+.biome/*.tsbuildinfo
