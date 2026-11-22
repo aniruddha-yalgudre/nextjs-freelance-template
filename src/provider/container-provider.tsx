@@ -1,18 +1,18 @@
-"use client";
+"use client"
 
-import { createContext, useContext, ReactNode } from "react";
+import { createContext, useContext, type ReactNode } from "react"
 
 type ContainerContextType = {
-  defaultMaxWidth: string;
-};
+  defaultMaxWidth: string
+}
 
 const ContainerContext = createContext<ContainerContextType>({
   defaultMaxWidth: "max-w-[1440px]",
-});
+})
 
 interface ContainerProviderProps {
-  children: ReactNode;
-  defaultMaxWidth?: string;
+  children: ReactNode
+  defaultMaxWidth?: string
 }
 
 export function ContainerProvider({
@@ -23,9 +23,9 @@ export function ContainerProvider({
     <ContainerContext.Provider value={{ defaultMaxWidth }}>
       {children}
     </ContainerContext.Provider>
-  );
+  )
 }
 
 export function useContainerConfig() {
-  return useContext(ContainerContext);
+  return useContext(ContainerContext)
 }
